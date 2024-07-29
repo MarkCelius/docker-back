@@ -10,7 +10,7 @@ config();
  * 
  */
 const conexion = createPool({
-    host: process.env.MYSQLHOST || "mysql",
+    host: process.env.MYSQLHOST || "db4free.net",
     user: process.env.MYSQLUSER || "basedatos_fl",
     password: process.env.MYSQLPASSWORD || "basedatos_fl",
     port: process.env.MYSQLPORT || 3306,
