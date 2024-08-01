@@ -2,7 +2,7 @@
 FROM node:21
 
 # Establece el directorio de trabajo en el contenedor
-WORKDIR /dist
+WORKDIR /backend_fastlearn
 
 # Copia el archivo package.json y package-lock.json al contenedor
 COPY package*.json ./
