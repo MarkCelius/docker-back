@@ -2,7 +2,7 @@
 FROM node:21
 
 # Establece el directorio de trabajo en el contenedor
-WORKDIR /backend_fastlearn
+WORKDIR /app
 
 # Copia el archivo package.json y package-lock.json al contenedor
 COPY package*.json ./
@@ -18,4 +18,4 @@ COPY . .
 ENV PORT=4000
 
 # Comando para iniciar la aplicación
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
