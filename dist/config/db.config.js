@@ -15,11 +15,11 @@ var _dotenv = require("dotenv");
  * 
  */
 var conexion = (0, _promise.createPool)({
-  host: process.env.MYSQL_ADDON_HOST,
-  user: process.env.MYSQL_ADDON_USER,
-  password: process.env.MYSQL_ADDON_PASSWORD,
-  database: process.env.MYSQL_ADDON_DB,
-  port: process.env.MYSQL_ADDON_PORT,
+  host: process.env.MYSQLHOST,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDB,
+  port: process.env.MYSQLPORT,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
