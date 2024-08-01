@@ -16,7 +16,7 @@ app.use(_express["default"].json());
 app.use(_express["default"].urlencoded({
   extended: true
 }));
-app.set("port", process.env.PORT || 6000);
+app.set("port", process.env.PORT);
 app.use((0, _cors["default"])());
 app.use("/", _index["default"]);
 var _default = exports["default"] = app;
